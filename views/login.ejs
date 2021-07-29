@@ -1,0 +1,34 @@
+<!-- header -->
+<%- include('components/header') -%>
+
+    <!-- body -->
+    <div class="text-center mb-3">
+        <div class="container mt-5 color-transperent w-50 p-5 center-div">
+            <div class="title mb-5 text-white">
+                <h2 class="">Login Here</h2>
+                <span class="">Login if register</span>
+                <% if(locals.logout) { %>
+                    <div class="alert alert-success">
+                        <%= logout %>
+                    </div>
+                <% } %>
+
+            </div>
+            <form action="/route/login" method="POST">
+                <div class="form-group mb-3 ">
+                    <input type="email" placeholder="Enter Email" class="form-control  color-transperent rounded-pill"
+                        name="email">
+                </div>
+                <div class="form-group mb-3">
+                    <input type="password" placeholder="Enter Password"
+                        class="form-control color-transperent rounded-pill" name="password">
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-success px-5 rounded-pill mb-3">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('components/footer') -%>

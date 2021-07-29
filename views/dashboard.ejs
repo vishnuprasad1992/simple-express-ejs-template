@@ -1,0 +1,13 @@
+<!-- header -->
+<%- include('components/header') -%>
+    <div class="text-center mb-3">
+        <div class="container mt-5 border rounded-circle w-50 p-5 center-div">
+            <h3 class="color-transperent">
+                Welcome <%= locals.email ? email : 'user' %>
+            </h3>
+            <a href="/route/logout" class="btn btn-danger px-5 rounded-pill"> Logout</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <%- include('components/footer') -%>

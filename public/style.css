@@ -1,0 +1,12 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.color-transperent{
+    background-color: transparent ;
+}
+.form-control::placeholder { 
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+}
